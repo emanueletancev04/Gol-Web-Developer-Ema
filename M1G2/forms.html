@@ -22,28 +22,50 @@
         <input type ="submit" value="Invia" />
     </form>
 
-    <h2>Form Completo</h2>
+   <hr> <h2>Form Completo</h2>
 
     <form method="GET" action="thanks.html">
         <label for="nomeUtente">Username</label>
         <input type="text" name="nomeUtente" id="nomeUtente" placeholder="Inserisci il tuo username"/>
-        <label for="passwordUtente">Username</label>
+        <label for="passwordUtente">Password</label>
         <input type="password" name="passwordUtente" id="passwordUtente" placeholder="Scegli una password"/>
-        <label for="emailUtente">Username</label>
+        <label for="emailUtente">Email</label>
         <input type="email" name="emailUtente" id="emailUtente" placeholder="Inserisci la tua email"/>
         <input type="submit" value="Invia" />
         <input type="reset" value="Annulla" />
     </form>
 
-    <h1>Form Complesso</h1>
+    <hr><h1>Form Complesso</h1>
 
-    <form>
-        <filedset>Anagrafica</filedset>
+    <form method="get" action="thanks.html">
+        <fieldset>Anagrafica
+            <label for="completeName">Nome completo</label>
+            <input type="text" name="completeName" id="completeName" />
+            <label for="userPass">Password</label>
+            <input type="password" name="userPass" />
+            <br />
+            <label for="address">Indirizzo completo</label>
+            <textarea name="address" rows="2" cols="40" placeholder="Inserisci l'indirizzo completo"></textarea>
+            <br /><br />
+            <label for="frequency">Frequenza</label>
+            <select name="frequency">
+                <option value="">Scegli la ftrequenza</option>
+                <option value="FT">Full time</option>
+                <option value="PT">Part time</option>
+                <option value="Sr">Serale</option>
+            </select>
+        </fieldset>
         <br />
-        <label for="completeName">Nome Completo</label> 
-        <input type="text" name="completeName" id="completetName" />
-        <label for="adress">Indirizzo Completo</label>
-        <input type=""
+        <p>Corso scelto</p>
+        <label for="course">Corso Scelto:</label>
+        <label for="HTML">HTML</label>
+        <input type="radio" value="HTML" name="course" />
+        <label for="CSS">CSS</label>
+        <input type="radio" value="CSS" name="course" />
+        <label for="JS">JavaScript</label>
+        <input type="radio" value="JS" name="course" />
+        <button type="submit">Invia</button>
+        <button type="reset">Cancella</button>
     </form>
     
 </body>
