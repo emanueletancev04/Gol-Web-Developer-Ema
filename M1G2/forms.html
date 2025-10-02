@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +10,7 @@
     <title>I forms</title>
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
 
     <h1>I forms</h1>
@@ -16,37 +18,38 @@
 
     <form method="GET" action="thanks.html">
         <label for="nomeCompleto">Nome Completo</label>
-        <input type="text" name="nomeCompleto" placeholder="Inserisci il tuo nome"/>
+        <input type="text" name="nomeCompleto" placeholder="Inserisci il tuo nome" />
         <label for="password">Password</label>
-        <input type="password" name="password" placeholder="Scegli la password"/>
-        <input type ="submit" value="Invia" />
+        <input type="password" name="password" placeholder="Scegli la password" />
+        <input type="submit" value="Invia" />
     </form>
 
-   <hr> <h2>Form Completo</h2>
+    <hr>
+    <h2>Form Completo</h2>
 
     <form method="GET" action="thanks.html">
         <label for="nomeUtente">Username</label>
-        <input type="text" name="nomeUtente" id="nomeUtente" placeholder="Inserisci il tuo username"/>
+        <input type="text" name="nomeUtente" id="nomeUtente" placeholder="Inserisci il tuo username" />
         <label for="passwordUtente">Password</label>
-        <input type="password" name="passwordUtente" id="passwordUtente" placeholder="Scegli una password"/>
+        <input type="password" name="passwordUtente" id="passwordUtente" placeholder="Scegli una password" />
         <label for="emailUtente">Email</label>
-        <input type="email" name="emailUtente" id="emailUtente" placeholder="Inserisci la tua email"/>
+        <input type="email" name="emailUtente" id="emailUtente" placeholder="Inserisci la tua email" />
         <input type="submit" value="Invia" />
         <input type="reset" value="Annulla" />
     </form>
 
-    <hr> <h1>Form Complesso</h1>
+    <hr>
+    <h1>Form Complesso</h1>
 
     <form method="GET" action="thanks.html">
-        <fieldset>Anagrafica
+        <fieldset>
+            <legend>Anagrafica</legend>
             <label for="completeName">Nome completo</label>
             <input type="text" name="completeName" id="completeName" />
             <label for="userPass">Password</label>
             <input type="password" name="userPass" />
-            <br />
             <label for="address">Indirizzo completo</label>
-            <textarea name="address" rows="2" cols="40" placeholder="Inserisci l'indirizzo completo"></textarea>
-            <br /><br />
+            <input name="address" name="adress" placeholder="Inserisci l'indirizzo completo"></input>
             <label for="frequency">Frequenza</label>
             <select name="frequency">
                 <option value="">Scegli la ftrequenza</option>
@@ -54,24 +57,40 @@
                 <option value="PT">Part time</option>
                 <option value="Sr">Serale</option>
             </select>
+            <label for="email">Email</label>
+            <input tpye="email" name="email" id="email" placeholder="Inserisci la tua email" />
+            <label for="date">Data di Nascita</label>
+            <input type="date" name="date" id="date" placeholder="Inserisci la tua data di nascita"></input>
         </fieldset>
         <br />
-        <p>Corso scelto</p>
-        <label for="course">Corso Scelto:</label>
-        <label for="HTML">HTML</label>
-        <input type="radio" value="HTML" name="course" />
-        <label for="CSS">CSS</label>
-        <input type="radio" value="CSS" name="course" />
-        <label for="JS">JavaScript</label>
-        <input type="radio" value="JS" name="course" />
-        <button type="submit">Invia</button>
-        <button type="reset">Cancella</button>
+        <fieldset>
+            <legend>Corso scelto</legend>
+            <label for="course">Corso Scelto:</label>
+            <br>
+            <label for="Front-End">Front-End</label>
+            <input type="radio" value="Front-End" name="course" />
+            <label for="Back-End">Back-End</label>
+            <input type="radio" value="Back-End" name="course" />
+            <label for="Full-Stack">Full-Stack</label>
+            <input type="radio" value="Full-Stack" name="course" />
+            <button type="submit">Invia</button>
+            <button type="reset">Cancella</button>
+        </fieldset>
+        <br>
+        <filedset>
+            <legend>Linguaggi Conosciuti</legend>
+            <select name="frequency">
+
+            </select>
+
+        </filedset>
     </form>
 
-<hr><a href="index.html" alt="Link alla Home Page" target="_self">Vai alla Home Page</a>
-<a href="table.html" alt="Link tabelle" target="_self">Vai a tabelle</a>
-<a href="link.html" alt="Link ai link" target="_self">Vai ai link</a>
-<a href="images.html" alt="Link alle immagini" target="_self">Vai alle immagini</a>
-  
+    <hr><a href="index.html" alt="Link alla Home Page" target="_self">Vai alla Home Page</a>
+    <a href="table.html" alt="Link tabelle" target="_self">Vai a tabelle</a>
+    <a href="link.html" alt="Link ai link" target="_self">Vai ai link</a>
+    <a href="images.html" alt="Link alle immagini" target="_self">Vai alle immagini</a>
+
 </body>
+
 </html>
