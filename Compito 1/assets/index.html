@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Metadati, titoli, collegamenti a CSS-->
 
 <head>
     <meta charset="UTF-8" />
@@ -9,73 +10,170 @@
 </head>
 
 <body>
+    <!--Intestazione pagina-->
     <header>
-        <div id="titleAndLogo">
+        <!--Creazione titolo e logo con barra di navigazione-->
+        <div id="title-and-logo">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjPkfTSbix4g4EPv42EinPjh0XLddeKySRbA&s"
-                alt="Logo" />
-            <h2>Epicode-Il blog dei developers</h2>
+                alt="Logo" width="10%" />
+            <h3>Epicode-Il blog dei developers</h3>
         </div>
-        <div id="navBar">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a> </li>
-                    <li><a href="#">Articoli</a> </li>
-                    <li><a href="#">Job</a> </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Articoli</a> </li>
+                <li><a href="#">Job</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fine intestazione pagina-->
     <hr>
 
     <main>
-        <div id="firstParagraph">
-            <h1>Come creare un template per i post</h1>
+        <!--Stesura della prima sezione:"Come creare un template per i post"-->
+        <article id="template-creation">
+            <h2>Come creare un template per i post</h2>
             <p>di Mario Rossi - pubblicato il 25-10-2020</p>
-            <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da
+            <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <strong>parti
+                    comuni</strong> da
                 applicare a
                 tutte le pagine</p>
             <p>Le varie aree saranno quindi suddivise in:</p>
+
+            <!--Lista puntata-->
+
             <ul>
-                <li>Contenuti di intestazione del tag <header>
+                <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code>
                 </li>
-                <li>Contenuti centrali variabili del tag <main> (corpo principale)</li>
-                <li>Contenuti di fine pagina comuni, da inserire nel tag <footer>
+                <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code> (corpo principale)</li>
+                <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code>
                 </li>
             </ul>
-        </div>
-        <div id="secondParagraph">
-            <h1>Formattazione del codice</h>
-            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</p>
+        </article>
+
+        <!--Fine prima sezione-->
+
+        <!--Stesura della seconda sezione:"Formattazione del codice"-->
+
+        <article id="code-formatting">
+            <h2>Formattazione del codice</h2>
+            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i
+                CSS. Perciò i passi saranno:</p>
+
+            <!--Lista numerata-->
+
             <ol>
                 <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
                 <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
                 <li>Applicare gli stili CSS</li>
             </ol>
-            <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
-            <table>
+
+            <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.
+            </p>
+
+            <!--Tabella semplice-->
+
+            <table border="1">
+                <caption>
+                    <b>Diffusione dei CSS</b>
+                </caption>
                 <thead>
                     <tr>
-                        <th>Diffusione dei CSS</th>
+                        <th><strong>Anno</strong></th>
+                        <th><strong>% di utilizzo</strong></th>
+                        <th><strong>Supporto browsers</strong></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Anno % di utilizzo Supporto browsers</td>
+                        <td>2000</td>
+                        <td>20%</td>
+                        <td>17%</td>
+                    </tr>
+                    <tr>
+                        <td>2002</td>
+                        <td>35%</td>
+                        <td>22%</td>
+                    </tr>
+                    <tr>
+                        <td>2004</td>
+                        <td>45%</td>
+                        <td>42%</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>80%</td>
+                        <td>51%</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>100%</td>
+                        <td>76%</td>
                     </tr>
                 </tbody>
             </table>
+            <p>Un test di validazione potrà essere fatto tramite il tool online <a
+                    href="https://validator.w3.org/#validate_by_input">tool online</a> dedicato allo scopo. Una
+                volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers
+                come loro:</p>
 
-        </div>
-        <div id="thirdParagraph">
+            <!--Inserimento video YouTube esplicativo-->
 
-        </div>
-        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ra5AJIYJEe4?si=R0SZPjwOmQ0MUb9p"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
 
+        <!--Fine seconda sezione-->
+
+        <!--Inizio <footer/>-->
+
+        <footer>
+            <h2>Novità</h2>
+            <p>Vuoi rimanere aggiornato su altre novità del blog? Iscirviti alla nostra newsletter:</p>
+
+            <!--Creazione <form> per iscirzione newsletter-->
+
+            <form method="GET" action="thanks.html">
+                <fieldset>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Inserisci la tua email" required />
+                    <button type="submit">Iscriviti!</button>
+                </fieldset>
+            </form>
+
+            <!--Creazione articoli correlati con link-->
+
+            <h2>Articoli correlati</h2>
+            <p><a href="#">Validare il codice HTML</a></p>
+            <p>Categoria:develop</p>
+            <time datetime="2020-0818">Data: 18-9-2020</time>
+            <p><a href="#">Correggere la sintassi</a></p>
+            <p>Categoria:develop</p>
+            <time datetime="2020-09-16">Data:16-9-2020</time>
+            <p><a href="#">Meno Kb nella pagina</a></p>
+            <p>Categoria:ottimizzazione</p>
+            <time datetime="2020-09-30">Data: 30-9-2020</time>
+
+            <hr>
+
+            <!--Copyrigth aggiornato il 03/10/2024-->
+
+            <p>&copy;Blog Epicode @2024</p>
+
+            <!--Stesura dei contatti-->
+
+            <address>
+                Testata online di Mario Rossi con prot. n213/2018 - via Luigi Einaudi 2 - Milano. P:IVA 00112233. <a
+                        href="info@epicode.school">info@epicode.school</a>
+            </address>
+        </footer>
+
+        <!--Fine <footer/>-->
 
     </main>
-
-
 </body>
 
 </html>
