@@ -27,6 +27,9 @@ header {
   position: sticky;
   top: 0;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 #title-and-logo {
@@ -40,11 +43,18 @@ header {
   border-radius: 8px;
 }
 
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
 #nav-bar {
   display: flex;
-  margin-left: auto;
   align-items: center;
-  padding: 10px 20px;
 }
 
 #nav-bar ul {
